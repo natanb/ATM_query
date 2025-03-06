@@ -48,11 +48,12 @@ def atm_wait():
         wait_time[j]=WaitMessage
         j+=1
 
-    return wait_time
-#print(wait_time)
 # Step 4: Print the extracted data
-   # print(f"CustomerCode: {CustomerCode}")
-#    print(f"Line: {LineCode}")
-#    print(f"Address: {Address}")
-#    print(f"WaitMessage: {WaitMessage}")
-   # print(f"LineDescription: {LineDescription}")
+        print(f"CustomerCode: {CustomerCode}")
+        print(f"Line: {LineCode}")
+        print(f"Address: {Address}")
+        print(f"WaitMessage: {WaitMessage}")
+        print(f"LineDescription: {LineDescription}")
+    return wait_time
+if __name__ == "__main__":
+    atm_wait()
