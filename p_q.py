@@ -5,6 +5,7 @@ from kivy.uix.button import Button
 from kivy.uix.gridlayout import GridLayout
 from kivy.clock import Clock
 import requests  # For making API requests to fetch bus wait times
+import q_atm_param as q
 
 class BusApp(App):
     def build(self):
@@ -36,8 +37,8 @@ class BusApp(App):
         self.grid_layout.clear_widgets()
         
         # Add wait times to the grid layout
-        for i, wait_time in enumerate(wait_times, start=1):
-            bus_label = Label(text=f"Bus {i}", font_size=18, halign="left", valign="middle")
+        for  wait_time in wait_times:
+            bus_label = Label(text=f"Bus ", font_size=18, halign="left", valign="middle")
             time_label = Label(text=f"{wait_time} min", font_size=18, halign="right", valign="middle")
             self.grid_layout.add_widget(bus_label)
             self.grid_layout.add_widget(time_label)
@@ -45,8 +46,8 @@ class BusApp(App):
     def fetch_bus_wait_times(self):
         # Replace this with your actual API call or logic to fetch wait times
         # For now, we'll simulate 6 wait times
-         
-        return ATM_query
+        a=q.atm_wait() 
+        return a
 
 if __name__ == "__main__":
     BusApp().run()
