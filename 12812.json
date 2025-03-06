@@ -1,0 +1,122 @@
+{
+  "Code": "5100924",
+  "Description": "San Donato M3",
+  "Location": {
+    "X": 9.2555823693514085,
+    "Y": 45.428753124370992
+  },
+  "CustomerCode": "12812",
+  "Municipality": "Milano",
+  "Address": "San Donato M3",
+  "Telephone": "",
+  "Fax": "",
+  "SiteUrl": "",
+  "Email": "",
+  "Category": {
+    "CategoryId": "20",
+    "CategoryName": "Fermate mezzi di superficie",
+    "HasTimeTables": true,
+    "Icons": null
+  },
+  "Details": {},
+  "Dynamic_First_Level": {},
+  "Lines": [
+    {
+      "Line": {
+        "LineId": "45",
+        "OperatorCode": "",
+        "LineCode": "45",
+        "LineDescription": "S.Donato M3 - Lambrate FS M2",
+        "TransportMode": 0,
+        "Suburban": false,
+        "OtherRoutesAvailable": false,
+        "Radiobus": false,
+        "RadiobusCapolinea": false
+      },
+      "Direction": "0",
+      "BookletUrl": "https://orari.atm.it/45_12812.pdf",
+      "BookletUrl2": "45",
+      "WaitMessage": "3 min",
+      "JourneyPatternId": "45|0",
+      "TrafficBulletins": [
+        {
+          "Title": "Bus 45 e 175: fermata sospesa",
+          "Body": "<p>Sono in corso lavori stradali. <strong>La fermata via Salomone/piazza Ovidio è sospesa</strong> in direzione Lambrate FS M2 (bus 45) e in direzione Cimitero Lambrate (bus 175). </p>\n<p>Usate le fermate prima o dopo: <br>\n- via Salomone 21 <br>\n- piazza Ovidio</p>\n",
+          "PublicationDate": "2024-12-16T06:48:47Z",
+          "ExpirationaDate": "2025-12-31T22:00:00Z"
+        },
+        {
+          "Title": "Bus 39, Q39, 45 e 924: fermata sospesa",
+          "Body": "<p style=\"text-align:left\">Sono in corso lavori stradali in via Viotti. Qui sotto trovate i cambiamenti alle fermate. </p>\n<h3>Bus 39, 54, 924 e Q39</h3>\n<p style=\"text-align:left\">La fermata via Viotti/via Bassini, nelle direzioni <strong>via Pitteri (linea 39), Segrate (linea 924) e viale Rubattino (linea Q39)</strong>, è sospesa. In alternativa usate le fermate prima o dopo:<br>\n- Via Flaminio/via Saccardo<br>\n- Stazione Lambrate</p>\n<h3>Bus 45</h3>\n<p style=\"text-align:left\">La fermata via Viotti/via Bassini, <strong>verso San Donato M3,</strong> è spostata all’altezza del numero civico 21.</p>\n",
+          "PublicationDate": "2025-01-29T11:14:39Z",
+          "ExpirationaDate": "2025-12-31T21:00:00Z"
+        },
+        {
+          "Title": "Bus 45 e 66: nuove fermate",
+          "Body": "<p>Ci sono due nuove fermate per i bus delle linee 45 e 66, per facilitare il cambio tra le due linee: </p>\n<ul>\n    <li>Il <strong>bus 45</strong>, verso San Donato, ferma in piazza Ovidio (vicino al vecchio capolinea del bus 973). </li>\n    <li>Il <strong>bus 66</strong>, verso Cadore, si ferma in via Numidia, prima di via Attilio Regolo </li>\n</ul>\n",
+          "PublicationDate": "2024-11-30T06:22:42Z",
+          "ExpirationaDate": "2025-03-31T16:00:00Z"
+        }
+      ],
+      "Links": [
+        {
+          "Rel": "timetable",
+          "Href": "tpl/stops/12812/timetable/line/45/dir/0",
+          "Title": null
+        },
+        {
+          "Rel": "journeypattern",
+          "Href": "tpl/journeyPatterns/45|0",
+          "Title": null
+        }
+      ]
+    },
+    {
+      "Line": {
+        "LineId": "645",
+        "OperatorCode": "",
+        "LineCode": "Q45",
+        "LineDescription": "Forlanini - Ponte Lambro",
+        "TransportMode": 0,
+        "Suburban": false,
+        "OtherRoutesAvailable": false,
+        "Radiobus": true,
+        "RadiobusCapolinea": true
+      },
+      "Direction": "0",
+      "BookletUrl": null,
+      "BookletUrl2": null,
+      "WaitMessage": null,
+      "JourneyPatternId": "Q45|0",
+      "TrafficBulletins": [],
+      "Links": [
+        {
+          "Rel": "timetable",
+          "Href": "tpl/stops/12812/timetable/line/Q45/dir/0",
+          "Title": null
+        },
+        {
+          "Rel": "journeypattern",
+          "Href": "tpl/journeyPatterns/Q45|0",
+          "Title": null
+        }
+      ]
+    }
+  ],
+  "PointAccessible": null,
+  "PointStopPath": null,
+  "PointStopStatus": null,
+  "PointStopInfo": null,
+  "Links": [
+    {
+      "Rel": "self",
+      "Href": "geodata/pois5100924",
+      "Title": null
+    },
+    {
+      "Rel": "linesummary",
+      "Href": "tpl/stops/12812/linesummary",
+      "Title": null
+    }
+  ]
+}
