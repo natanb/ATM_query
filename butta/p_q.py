@@ -35,11 +35,12 @@ class BusApp(App):
         
         # Clear the grid layout before adding new data
         self.grid_layout.clear_widgets()
-        stop_bus=["45 Facchinetti", 
+        
+        lines=["45 FACCHINETTI","93 ARGONNE","93 GORINI","45 GOLGI","45 MURANI"] 
         # Add wait times to the grid layout
-        for  wait_time in wait_times:
-            bus_label = Label(text=f"Bus ", font_size=18, halign="left", valign="middle")
-            time_label = Label(text=f"{wait_time} min", font_size=18, halign="right", valign="middle")
+        for  i in range(len(wait_times)):
+            bus_label = Label(text=f"{lines[i]}", font_size=18, halign="left", valign="middle")
+            time_label = Label(text=f"{wait_times[i]}", font_size=18, halign="right", valign="middle")
             self.grid_layout.add_widget(bus_label)
             self.grid_layout.add_widget(time_label)
     
