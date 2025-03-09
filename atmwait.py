@@ -1,3 +1,6 @@
+import os
+os.environ["KIVY_NO_CONSOLELOG"] = "1"
+
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
@@ -80,27 +83,24 @@ class BusApp(App):
             cookies=cookies,
             headers=headers,
             )
-#    print("---------------------")
-
-
 
             data = response.json()
 
 # Step 3: Extract specific data
-            LineDescription = data['Lines'][0]['Line']['LineDescription']
-            CustomerCode = data['CustomerCode']
+#            LineDescription = data['Lines'][0]['Line']['LineDescription']
+#            CustomerCode = data['CustomerCode']
             WaitMessage = data['Lines'][0]['WaitMessage']
-            Address = data['Address']
-            LineCode = data['Lines'][0]['Line']['LineCode']
+#            Address = data['Address']
+#            LineCode = data['Lines'][0]['Line']['LineCode']
             wait_time[j]=WaitMessage
             j+=1
 
 # Step 4: Print the extracted data
-            print(f"CustomerCode: {CustomerCode}")
-            print(f"Line: {LineCode}")
-            print(f"Address: {Address}")
-            print(f"WaitMessage: {WaitMessage}")
-            print(f"LineDescription: {LineDescription}")
+#            print(f"CustomerCode: {CustomerCode}")
+#            print(f"Line: {LineCode}")
+#            print(f"Address: {Address}")
+#            print(f"WaitMessage: {WaitMessage}")
+#            print(f"LineDescription: {LineDescription}")
         return wait_time
 
 
